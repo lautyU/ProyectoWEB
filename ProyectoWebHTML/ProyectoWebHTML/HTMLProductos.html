@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulario de producto</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Productos</legend>
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input id="name" type="text" name="product_name" required />
+                </li>
+                <li>
+                    <label for="descrption">Descripcion:</label>
+                    <input id="description" type="text" name="product_desc" required />
+                </li>
+                <li>
+                    <label for="price">Precio:</label>
+                    <input id="price" type="number" name="product_price" required />
+                </li>
+                <li>
+                    <label for="stock">Stock:</label>
+                    <input id="stock" type="number" name="product_stock" required />
+                </li>
+                <li>
+                    <input id="save" type="button" value="Guardar" />
+                    <input id="delete" type="button" value="Eliminar" />
+                    <input id="cancel" type="button" value="Cancelar" />
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <div id="gridProductos"></div>
+
+</body>
+</html>
