@@ -50,29 +50,11 @@ namespace Negocios
             }
         }
 
-        public static void validarCaracter(KeyPressEventArgs e)
-        {
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
-            {
-                MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
-
-        public static void validarNumero(KeyPressEventArgs e)
-        {
-            if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar == (char)Keys.Decimal))
-            {
-                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
+      
         public static List<Producto> ObtenerProducto()
         {
-            List<Producto> lista = DatoProducto.Obtener();
-            return lista;
+            return DatoProducto.Obtener();
+            
         }
 
         private static bool CamposVacios(Producto producto) //TODO: mejorar metodo

@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>Formulario de producto</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
     <form>
@@ -13,19 +13,23 @@
             <legend>Productos</legend>
             <ul>
                 <li>
-                    <label for="name">Nombre:</label>
+                    <label for="id">ID</label>
+                    <input id="id" type="text" name="product_id" required />
+                </li>
+                <li>
+                    <label for="name">Nombre</label>
                     <input id="name" type="text" name="product_name" required />
                 </li>
                 <li>
-                    <label for="descrption">Descripcion:</label>
+                    <label for="descrption">Descripcion</label>
                     <input id="description" type="text" name="product_desc" required />
                 </li>
                 <li>
-                    <label for="price">Precio:</label>
+                    <label for="price">Precio</label>
                     <input id="price" type="number" name="product_price" required />
                 </li>
                 <li>
-                    <label for="stock">Stock:</label>
+                    <label for="stock">Stock</label>
                     <input id="stock" type="number" name="product_stock" required />
                 </li>
                 <li>
