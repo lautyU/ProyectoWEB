@@ -1,0 +1,29 @@
+body {
+background:url(../Fondo/fondo.jpeg);
+background-repeat: no-repeat;
+}
+
+#tablacon
+{
+  width: 40%;
+  left: 200px;
+  position: absolute;
+  flex: auto;
+
+}
+#cliente{
+    width: 22%;
+}
+
+#botones{
+  width:100%;
+  height: 1%;
+  top: 30%;
+}
+#cajarellenar{
+  flex: auto;
+  left: 100px;
+}
+form{
+  left: 10%;;
+}
